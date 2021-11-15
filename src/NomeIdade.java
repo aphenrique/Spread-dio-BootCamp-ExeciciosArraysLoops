@@ -14,7 +14,7 @@ public class NomeIdade {
         int idade;
 
         print.println("Insira o nome e a idade");
-        print.println("Para sair, digite \"0\" no campo nome");
+        print.println("Para sair, digite \"0\" no campo nome\n");
 
         while (true) {
             print.print("Nome: ");

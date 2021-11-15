@@ -23,7 +23,13 @@ public class App {
                 new NomeIdade();
                 break;
             case 2:
+                new Nota();
+                break;
+            case 3:
                 new MaiorMedia();
+                break;
+            case 4:
+                new ParImpar();
                 break;
             case 0:
                 limpaConsole();
@@ -31,8 +37,7 @@ public class App {
                 break;
 
             default:
-                print.println("");
-                print.println("Esta opção não é válida");
+                print.println("\nEsta opção não é válida");
                 print.print("Pressione [Enter] para continuar e selecionar uma opção válida ");
                 Console console = System.console();
                 console.readLine();
@@ -48,9 +53,11 @@ public class App {
     static void printOptions() {
 
         print.println("Exercícios das aulas de estrutura de repetição e arrays em java");
-        print.println("===============================================================");
+        print.println("===============================================================\n");
         print.println("1 - Nome e idade");
-        print.println("2 - Maior e média");
+        print.println("2 - Nota");
+        print.println("3 - Maior e média");
+        print.println("4 - Par e ímpar");
         print.println("0 - Sair");
         print.println("");
         print.print("Insira o número do exercício para realizar: ");

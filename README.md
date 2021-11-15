@@ -11,12 +11,14 @@ EXERCÍCIOS ESTRUTURAS DE REPETIÇÃO
 [Resolução](src/NomeIdade.java)
 
 🔸Nota: Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+[Resolução](src/Nota.java)
 
 📝 DO-WHILE
 🔸Maior e Média: Faça um programa que leia 5 números e informe o maior número e a média desses números.
 [Resolução](src/MaiorMedia.java)
 
 🔸Par e Ímpar: Faça um programa que peça N números inteiros. Calcule e mostre a quantidade de números pares e a quantidade de números impares.
+[Resolução](src/MaiorMedia.java)
 
 📝 FOR
 🔸Tabuada: Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:

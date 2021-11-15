@@ -25,7 +25,7 @@ public class MaiorMedia {
             print.println(Float.toString(calculaMedia(valores)));
 
             do {
-                print.print("Deseja repetir o exercício? [s] sim [n] Não: ");
+                print.print("\nDeseja repetir o exercício? [s] sim [n] Não: ");
 
                 // A classe console foi preferida neste contexto por permitir que a entrada seja
                 // recebida, mesmo que vazia. Na prática, permite que o usuário veja a resposta
