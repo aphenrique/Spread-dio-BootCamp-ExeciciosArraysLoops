@@ -31,6 +31,9 @@ public class App {
             case 5:
                 new Tabuada();
                 break;
+            case 6:
+                new Fatorial();
+                break;
             case 0:
                 limpaConsole();
                 exit = true;
@@ -59,6 +62,7 @@ public class App {
         print.println("3 - Maior e média");
         print.println("4 - Par e ímpar");
         print.println("5 - Tabuada");
+        print.println("6 - Fatorial");
         print.println("0 - Sair");
         print.println("");
         print.print("Insira o número do exercício para realizar: ");
