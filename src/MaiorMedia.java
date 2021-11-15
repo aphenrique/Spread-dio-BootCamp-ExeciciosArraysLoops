@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.Scanner;
 
 public class MaiorMedia {
@@ -10,6 +11,7 @@ public class MaiorMedia {
         boolean exit = false;
 
         do {
+            App.limpaConsole();
             print.println("Insira 5 valores e receba a média");
 
             float[] valores = new float[5];
@@ -21,11 +23,25 @@ public class MaiorMedia {
 
             print.print("Média: ");
             print.println(Float.toString(calculaMedia(valores)));
-            print.print("Deseja repetir o exercício? [s] sim [N] Não");
-            
-            if (scan.next().contains("s"))
-                exit = true;
 
+            do {
+                print.print("Deseja repetir o exercício? [s] sim [n] Não: ");
+
+                // A classe console foi preferida neste contexto por permitir que a entrada seja
+                // recebida, mesmo que vazia. Na prática, permite que o usuário veja a resposta
+                // antes de realizar uma ação
+                Console console = System.console();
+                String entrada = console.readLine();
+
+                if (entrada.equals("s"))
+                    break;
+
+                if (entrada.equals("n")) {
+                    exit = true;
+                    break;
+                }
+
+            } while (true);
         } while (!exit);
     }
 

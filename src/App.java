@@ -1,4 +1,8 @@
+import java.io.Console;
+import java.io.InputStream;
 import java.util.Scanner;
+
+import javax.print.event.PrintEvent;
 
 public class App {
     static Print print = new Print();
@@ -22,13 +26,16 @@ public class App {
                 new MaiorMedia();
                 break;
             case 0:
+                limpaConsole();
                 exit = true;
                 break;
 
             default:
                 print.println("");
                 print.println("Esta opção não é válida");
-                print.print("Insira o número do exercício para realizar: ");
+                print.print("Pressione [Enter] para continuar e selecionar uma opção válida ");
+                Console console = System.console();
+                console.readLine();
                 break;
             }
 
@@ -50,7 +57,7 @@ public class App {
 
     }
 
-    private static void limpaConsole() {
+    public static void limpaConsole() {
         try {
             // Limpa a tela no windows, no linux e no MacOS
             if (System.getProperty("os.name").contains("Windows"))

@@ -7,6 +7,8 @@ public class NomeIdade {
         // a sua altura em centímetros. (Pare inserindo o valor 0 no campo nome)
         Scanner scan = new Scanner(System.in);
         Print print = new Print();
+        
+        App.limpaConsole();
 
         String nome;
         int idade;
@@ -24,7 +26,5 @@ public class NomeIdade {
             print.print("idade: ");
             idade = scan.nextInt();
         }
-
-        // scan.close();
     }
 }
