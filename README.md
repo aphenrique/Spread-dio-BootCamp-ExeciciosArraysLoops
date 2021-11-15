@@ -28,6 +28,8 @@ Tabuada de 5:
 5 X 2 = 10
 ...
 5 X 10 = 50
+[Resolução](src/Tabuada.java)
 
 🔸Fatorial: Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
 Ex.: 5!=5.4.3.2.1=120
+[Resolução](src/Fatorial.java)
