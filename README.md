@@ -3,7 +3,7 @@
 Resolução de alguns dos exercícios oferecidos na aula de Estruturas de repetição e arrays.
 Os desafios estão listados abaixo e o link para o arquivo com a resolução proposta está logo abaixo de cada um como "resolução".
 
-Para os que desejarem baixar e testar o código, o arquivo App.java contém a inicialização de todos os exercícios.
+Para os que desejarem baixar e testar o código, o arquivo [App.java](src/App.java) contém a inicialização de todos os exercícios.
 
 EXERCÍCIOS ESTRUTURAS DE REPETIÇÃO
 📝 WHILE
