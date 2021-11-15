@@ -15,7 +15,7 @@ public class Nota {
         do {
             App.limpaConsole();
             print.print("Insira uma nota entre 0 e 10: ");
-            int nota = scan.nextInt();
+            int nota = receberInteiro();
 
             if (nota >= 0 && nota <= 10) {
                 exit = true;
@@ -28,6 +28,21 @@ public class Nota {
                 console.readLine();
             }
         } while (!exit);
+    }
+
+    int receberInteiro() {
+        int value = 0;
+        do {
+            if (scan.hasNextInt()) {
+                value = scan.nextInt();
+                break;
+            }
+            scan.next();
+            print.print("Por favor, insira um inteiro: ");
+
+        } while (true);
+
+        return value;
     }
 
 }

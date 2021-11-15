@@ -5,9 +5,11 @@ public class MaiorMedia {
 
     // Maior e Média: Faça um programa que leia 5 números e informe o maior número e
     // a média desses números.
+
+    Print print = new Print();
+    Scanner scan = new Scanner(System.in);
+
     MaiorMedia() {
-        Print print = new Print();
-        Scanner scan = new Scanner(System.in);
         boolean exit = false;
 
         do {
@@ -18,7 +20,7 @@ public class MaiorMedia {
 
             for (int i = 0; i < 5; i++) {
                 print.print("valor " + (i + 1) + ": ");
-                valores[i] = scan.nextFloat();
+                valores[i] = receberFloat();
             }
 
             print.print("Média: ");
@@ -53,5 +55,20 @@ public class MaiorMedia {
         }
         media = media / valores.length;
         return media;
+    }
+
+    float receberFloat() {
+        float value = 0;
+        do {
+            if (scan.hasNextFloat()) {
+                value = scan.nextFloat();
+                break;
+            }
+            scan.next();
+            print.print("Valor inválido! \nPor favor, insira um valor válido: ");
+
+        } while (true);
+
+        return value;
     }
 }

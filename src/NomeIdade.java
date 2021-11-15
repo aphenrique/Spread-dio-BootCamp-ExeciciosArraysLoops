@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
 public class NomeIdade {
+    Scanner scan = new Scanner(System.in);
+    Print print = new Print();
+
     NomeIdade() {
         // Nome e Idade: Faça um programa que leia conjuntos de dois valores,
         // o primeiro representando a matrícula do aluno e o segundo representando
         // a sua altura em centímetros. (Pare inserindo o valor 0 no campo nome)
-        Scanner scan = new Scanner(System.in);
-        Print print = new Print();
-        
+
         App.limpaConsole();
 
         String nome;
@@ -26,5 +27,20 @@ public class NomeIdade {
             print.print("idade: ");
             idade = scan.nextInt();
         }
+    }
+
+    int receberInteiro() {
+        int value = 0;
+        do {
+            if (scan.hasNextInt()) {
+                value = scan.nextInt();
+                break;
+            }
+            scan.next();
+            print.print("Valor inválido! \nPor favor, insira um valor válido: ");
+
+        } while (true);
+
+        return value;
     }
 }
