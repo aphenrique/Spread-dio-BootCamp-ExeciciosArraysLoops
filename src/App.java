@@ -1,8 +1,5 @@
 import java.io.Console;
-import java.io.InputStream;
 import java.util.Scanner;
-
-import javax.print.event.PrintEvent;
 
 public class App {
     static Print print = new Print();
@@ -31,6 +28,9 @@ public class App {
             case 4:
                 new ParImpar();
                 break;
+            case 5:
+                new Tabuada();
+                break;
             case 0:
                 limpaConsole();
                 exit = true;
@@ -58,6 +58,7 @@ public class App {
         print.println("2 - Nota");
         print.println("3 - Maior e média");
         print.println("4 - Par e ímpar");
+        print.println("5 - Tabuada");
         print.println("0 - Sair");
         print.println("");
         print.print("Insira o número do exercício para realizar: ");
