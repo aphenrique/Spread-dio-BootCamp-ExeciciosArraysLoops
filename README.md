@@ -32,4 +32,5 @@ Tabuada de 5:
 
 🔸Fatorial: Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
 Ex.: 5!=5.4.3.2.1=120
+Obs. Neste exercício usei recursividade. Uma opção aos laços de repetição que é uma boa opção neste caso. Usada apenas para exercitar um pouco a lógica.
 [Resolução](src/Fatorial.java)
