@@ -36,17 +36,18 @@ public class Tabuada {
 
     void printTabuada(int valor) {
         for (int i = 1; i <= 20; i++) {
-            print.print(valor + " X " + i + " = " + valor*i);
+
+            print.print(valor + " X " + i + " = " + valor * i);
             print.print("\t");
-            print.print(valor + " X " + (i+20) + " = " + valor*(i+20));
+            print.print(valor + " X " + (i + 20) + " = " + valor * (i + 20));
             print.print("\t");
-            print.print(valor + " X " + (i+40) + " = " + valor*(i+40));
+            print.print(valor + " X " + (i + 40) + " = " + valor * (i + 40));
             print.print("\t");
-            print.print(valor + " X " + (i+60) + " = " + valor*(i+60));
+            print.print(valor + " X " + (i + 60) + " = " + valor * (i + 60));
             print.print("\t");
-            print.print(valor + " X " + (i+80) + " = " + valor*(i+80));
+            print.print(valor + " X " + (i + 80) + " = " + valor * (i + 80));
             print.print("\t");
-            print.println(""); 
+            print.println("");
         }
     }
 
